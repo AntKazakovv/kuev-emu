@@ -1,0 +1,1347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<maplinked>
+  <item>
+    <varname>IN_CP_SPOTLIGHTS</varname>
+    <frname>Индивид. освещение купе (софиты)</frname>
+    <kmr>2</kmr>
+    <mr>1</mr>
+    <signal>1</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_CP_LUM</varname>
+    <frname>Люм. купе</frname>
+    <kmr>2</kmr>
+    <mr>1</mr>
+    <signal>2</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_PASSAGE_LUM</varname>
+    <frname>Люм. проход (коридор большой)</frname>
+    <kmr>2</kmr>
+    <mr>1</mr>
+    <signal>3</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_PORTAL_CORR_LUM</varname>
+    <frname>Люм. тамбур/коридор малый</frname>
+    <kmr>2</kmr>
+    <mr>1</mr>
+    <signal>4</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_CP_LED</varname>
+    <frname>Светодиодное купе</frname>
+    <kmr>2</kmr>
+    <mr>1</mr>
+    <signal>5</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_PASSAGE_LED</varname>
+    <frname>Светодиодное проход</frname>
+    <kmr>2</kmr>
+    <mr>1</mr>
+    <signal>6</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_PORTAL_CORR_LED</varname>
+    <frname>Светодиодное тамбур/коридор</frname>
+    <kmr>2</kmr>
+    <mr>1</mr>
+    <signal>7</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_GANGWAY</varname>
+    <frname>Переходная площадка</frname>
+    <kmr>2</kmr>
+    <mr>1</mr>
+    <signal>8</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_WC_LUM</varname>
+    <frname>Люм. туалетов</frname>
+    <kmr>2</kmr>
+    <mr>1</mr>
+    <signal>9</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_WC_LED</varname>
+    <frname>Светодиодное туалетов</frname>
+    <kmr>2</kmr>
+    <mr>1</mr>
+    <signal>10</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_3000V_2WIRE</varname>
+    <frname>Переключение на 2х проводную ВВ магистраль от тепловоза</frname>
+    <kmr>2</kmr>
+    <mr>1</mr>
+    <signal>11</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_SIGNAL_LIGHTS</varname>
+    <frname>Сигнальные фонари</frname>
+    <kmr>2</kmr>
+    <mr>1</mr>
+    <signal>12</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_BS_3000V_2WIRE_BACK_LOOP</varname>
+    <frname>Переключение на 2х проводную ВВ магистраль торм.cторона</frname>
+    <kmr>2</kmr>
+    <mr>1</mr>
+    <signal>13</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_CONNECTION_TO_M110V</varname>
+    <frname>Подключение к М 110 В</frname>
+    <kmr>2</kmr>
+    <mr>1</mr>
+    <signal>14</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_3000V_2WIRE_BACK_LOOP</varname>
+    <frname>Переключение на 2х проводную ВВ магистраль неторм.cторона</frname>
+    <kmr>2</kmr>
+    <mr>1</mr>
+    <signal>15</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_WATER_LEVEL_100</varname>
+    <frname>100 АУВ</frname>
+    <kmr>2</kmr>
+    <mr>3</mr>
+    <signal>1</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_WATER_LEVEL_75</varname>
+    <frname>75 АУВ</frname>
+    <kmr>2</kmr>
+    <mr>3</mr>
+    <signal>2</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_WATER_LEVEL_50</varname>
+    <frname>50 АУВ</frname>
+    <kmr>2</kmr>
+    <mr>3</mr>
+    <signal>3</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_WATER_LEVEL_25</varname>
+    <frname>25 АУВ</frname>
+    <kmr>2</kmr>
+    <mr>3</mr>
+    <signal>4</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_AUV_VOLTAGE</varname>
+    <frname>Uп АУВ</frname>
+    <kmr>2</kmr>
+    <mr>3</mr>
+    <signal>5</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_CP_ADD_HEAT_2GRP</varname>
+    <frname>Доп. Отопление купе 2 гр.</frname>
+    <kmr>2</kmr>
+    <mr>3</mr>
+    <signal>6</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_BS_DOOR_READY</varname>
+    <frname>Готовность работы двери торм.</frname>
+    <kmr>2</kmr>
+    <mr>3</mr>
+    <signal>7</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_DOOR_READY</varname>
+    <frname>Готовность работы двери неторм.</frname>
+    <kmr>2</kmr>
+    <mr>3</mr>
+    <signal>8</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_TRAINMAN_CP_ADD_HEAT</varname>
+    <frname>Доп отопл. Купе проводника</frname>
+    <kmr>2</kmr>
+    <mr>3</mr>
+    <signal>9</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_UPH_GV_HEAT</varname>
+    <frname>УПХ и ГВ нагрев</frname>
+    <kmr>2</kmr>
+    <mr>3</mr>
+    <signal>10</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_BUTTON_ALARM</varname>
+    <frname>Сигнал ТРЕВОГА (от тревожной кнопки 5S10)</frname>
+    <kmr>2</kmr>
+    <mr>3</mr>
+    <signal>11</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_WASTEPIPE_HEAT</varname>
+    <frname>Обогрев сливных труб умывальников, Фановых ЭЧТ</frname>
+    <kmr>2</kmr>
+    <mr>3</mr>
+    <signal>12</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_WC_WASTEPIPE_HEAT</varname>
+    <frname>Обогрев слива унитазов котельной</frname>
+    <kmr>2</kmr>
+    <mr>3</mr>
+    <signal>13</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_CP_ADD_HEAT_1GRP</varname>
+    <frname>Доп. Отопление купе 1 гр.</frname>
+    <kmr>2</kmr>
+    <mr>3</mr>
+    <signal>15</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_SHOWER_HEAT</varname>
+    <frname>Доп.отопление душевой</frname>
+    <kmr>2</kmr>
+    <mr>3</mr>
+    <signal>16</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_24VOLTS_IN_48_90</varname>
+    <frname>Наличие 24 В в цепи 49/80</frname>
+    <kmr>2</kmr>
+    <mr>4</mr>
+    <signal>1</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_WC_1_DOOR_CLOSED</varname>
+    <frname>Дверь WC 1 (закрыта)</frname>
+    <kmr>2</kmr>
+    <mr>4</mr>
+    <signal>2</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_LOW_HTANK_TEMP</varname>
+    <frname>Низкая температура в баке ЭЧТ</frname>
+    <kmr>2</kmr>
+    <mr>4</mr>
+    <signal>3</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_HTANK_LEVEL_95</varname>
+    <frname>95 заполение бака ЭЧТ</frname>
+    <kmr>2</kmr>
+    <mr>4</mr>
+    <signal>4</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_HTANK_LEVEL_80</varname>
+    <frname>80 заполение бака ЭЧТ</frname>
+    <kmr>2</kmr>
+    <mr>4</mr>
+    <signal>5</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_HTANK_LEVEL_10</varname>
+    <frname>10 заполение бака ЭЧТ</frname>
+    <kmr>2</kmr>
+    <mr>4</mr>
+    <signal>6</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_HTANK_ON</varname>
+    <frname>Включение в работу ЭЧТ (Вакуум. Уст)</frname>
+    <kmr>2</kmr>
+    <mr>4</mr>
+    <signal>7</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_VACUUM_UNIT_ON_1</varname>
+    <frname>Работа вакуум. Установки 1 (наличие сигнала)</frname>
+    <kmr>2</kmr>
+    <mr>4</mr>
+    <signal>8</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_VACUUM_UNIT_ON_2</varname>
+    <frname>Работа вакуум. Установки 2 (наличие сигнала)</frname>
+    <kmr>2</kmr>
+    <mr>4</mr>
+    <signal>9</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_WC_EXHAUST_FAN</varname>
+    <frname>Вытяжной вентилятор туалета(ов), душевой</frname>
+    <kmr>2</kmr>
+    <mr>4</mr>
+    <signal>10</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_TAKEOUT_ALARM</varname>
+    <frname>Вызывная сигнализация н.т. (дверь торц.)</frname>
+    <kmr>2</kmr>
+    <mr>4</mr>
+    <signal>11</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_WC_2_DOOR_CLOSED</varname>
+    <frname>Дверь WC 2 (закрыта)</frname>
+    <kmr>2</kmr>
+    <mr>4</mr>
+    <signal>12</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_HTANK_HEAT</varname>
+    <frname>Эл.обогрев бака ЭЧТ</frname>
+    <kmr>2</kmr>
+    <mr>4</mr>
+    <signal>13</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_HTANK_LIQUID_HEAT</varname>
+    <frname>Тосольный обогрев бака ЭЧТ</frname>
+    <kmr>2</kmr>
+    <mr>4</mr>
+    <signal>14</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_UOV_CONTROL</varname>
+    <frname>УОВ — КОНТРОЛЬ</frname>
+    <kmr>2</kmr>
+    <mr>4</mr>
+    <signal>15</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_UOV_RESOURCE</varname>
+    <frname>УОВ — РЕСУРС</frname>
+    <kmr>2</kmr>
+    <mr>4</mr>
+    <signal>16</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>OUT_TRAINMAN_CP_ADD_HEAT</varname>
+    <frname>Доп. отопления купе проводника уп</frname>
+    <kmr>2</kmr>
+    <mr>2</mr>
+    <signal>1</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_CP_LUM</varname>
+    <frname>Люм. купе уп</frname>
+    <kmr>2</kmr>
+    <mr>2</mr>
+    <signal>2</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_PASSAGE_LUM</varname>
+    <frname>Люм. проход уп</frname>
+    <kmr>2</kmr>
+    <mr>2</mr>
+    <signal>3</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_PORTAL_CORR_GANGWAY_LUM</varname>
+    <frname>Люм. тамбур/кордор уп</frname>
+    <kmr>2</kmr>
+    <mr>2</mr>
+    <signal>4</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_PASSAGE_LED</varname>
+    <frname>Светодиодное проход уп</frname>
+    <kmr>2</kmr>
+    <mr>2</mr>
+    <signal>5</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_CP_LED</varname>
+    <frname>Светодиодное купе уп</frname>
+    <kmr>2</kmr>
+    <mr>2</mr>
+    <signal>6</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_PORTAL_CORR_GANGWAY_LED</varname>
+    <frname>Светодиодное тамбур/коридор/переходн. пл. уп</frname>
+    <kmr>2</kmr>
+    <mr>2</mr>
+    <signal>7</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_CP_ADD_HEAT_1GRP</varname>
+    <frname>Доп.отопление купе 1 гр. уп</frname>
+    <kmr>2</kmr>
+    <mr>2</mr>
+    <signal>9</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_CP_ADD_HEAT_2GRP</varname>
+    <frname>Доп. отопление купе 2 гр. уп</frname>
+    <kmr>2</kmr>
+    <mr>2</mr>
+    <signal>10</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_220V_SOCK_KETTLE_VENDING</varname>
+    <frname>Розетки 220 В чайник (master), вендинг. апп. (slave) уп</frname>
+    <kmr>2</kmr>
+    <mr>2</mr>
+    <signal>11</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_UPH_GV</varname>
+    <frname>УПХ и ГВ уп</frname>
+    <kmr>2</kmr>
+    <mr>2</mr>
+    <signal>12</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_WASTEPIPE_HEAT</varname>
+    <frname>Обогрев сливных труб уп</frname>
+    <kmr>2</kmr>
+    <mr>2</mr>
+    <signal>13</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_SHOWER_ADD_HEAT</varname>
+    <frname>Доп.отопление душевая уп.</frname>
+    <kmr>2</kmr>
+    <mr>2</mr>
+    <signal>14</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_HTANK_ELECTRIC_HEAT</varname>
+    <frname>Эл.обогрев бака ЭЧТ уп</frname>
+    <kmr>2</kmr>
+    <mr>2</mr>
+    <signal>15</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_TURN_ON_HTANK</varname>
+    <frname>Вкл. В работу ЭЧТ _или Ручн.упр.(5S36) уп</frname>
+    <kmr>2</kmr>
+    <mr>2</mr>
+    <signal>16</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_WATER_HEAT</varname>
+    <frname>Кипятильник (пурифайер) уп</frname>
+    <kmr>1</kmr>
+    <mr>1</mr>
+    <signal>1</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_WATER_BOILER</varname>
+    <frname>Водонагреватель служебн. Отд. уп</frname>
+    <kmr>1</kmr>
+    <mr>1</mr>
+    <signal>2</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_MICROWAVE_OVEN</varname>
+    <frname>Печь МВ уп</frname>
+    <kmr>1</kmr>
+    <mr>1</mr>
+    <signal>3</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_CP_SPOTLIGHTS</varname>
+    <frname>Индивид. освещение купе (софиты) уп</frname>
+    <kmr>1</kmr>
+    <mr>1</mr>
+    <signal>4</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_ENABLE_LIGHTING_CNTRL</varname>
+    <frname>Готовн упр. Осв КУ(вкл. 2К18) уп</frname>
+    <kmr>1</kmr>
+    <mr>1</mr>
+    <signal>5</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_SIDELONG_CORR_LUM</varname>
+    <frname>Люм. осв – косой коридор уп</frname>
+    <kmr>1</kmr>
+    <mr>1</mr>
+    <signal>6</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_SIDELONG_CORR_LED</varname>
+    <frname>Светодиодное осв.- косой коридор уп</frname>
+    <kmr>1</kmr>
+    <mr>1</mr>
+    <signal>7</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_BS_PORTAL_GANGWAY_LUM</varname>
+    <frname>Люм. осв.- тамбур_переход (торм.) уп</frname>
+    <kmr>1</kmr>
+    <mr>1</mr>
+    <signal>8</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_BS_PORTAL_GANGWAY_LED</varname>
+    <frname>Светодиодное осв. тамбур_переход (торм.) уп</frname>
+    <kmr>1</kmr>
+    <mr>1</mr>
+    <signal>9</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_BS_SIGNAL_LIGHTS</varname>
+    <frname>Вкл сигнальных фонарей торм. сторона уп</frname>
+    <kmr>1</kmr>
+    <mr>1</mr>
+    <signal>10</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_SIGNAL_LIGHTS</varname>
+    <frname>Вкл сигнальных фонарей неторм. сторона уп</frname>
+    <kmr>1</kmr>
+    <mr>1</mr>
+    <signal>11</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_LOUD_NOTIFICATION</varname>
+    <frname>Громкое оповещение уп</frname>
+    <kmr>1</kmr>
+    <mr>1</mr>
+    <signal>12</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_CLOSE_AIR_OPEN_REC_VALVES</varname>
+    <frname>Закр. наруж. засл., откр. рецирк. засл. при tпр ниже 16 в ручке</frname>
+    <kmr>1</kmr>
+    <mr>1</mr>
+    <signal>13</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_CALL_THE_TRAINMAN</varname>
+    <frname>Звуковой сигнал(5НА1) – вызов проводника уп</frname>
+    <kmr>1</kmr>
+    <mr>1</mr>
+    <signal>14</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_SPEED_ABOVE_5KMH</varname>
+    <frname>Скорость движения вагона более 5 км/ч уп</frname>
+    <kmr>1</kmr>
+    <mr>1</mr>
+    <signal>15</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_UKV_PCH_PROTECT_RST</varname>
+    <frname>Сброс защиты УКВ_ПЧ (4К19) уп</frname>
+    <kmr>1</kmr>
+    <mr>2</mr>
+    <signal>1</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_0_1_PCH</varname>
+    <frname>0 - разряд кода задания производительности 1 канала ПЧ уп</frname>
+    <kmr>1</kmr>
+    <mr>2</mr>
+    <signal>2</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_1_1_PCH</varname>
+    <frname>1- разряд кода задания производительности 1 канала ПЧ уп</frname>
+    <kmr>1</kmr>
+    <mr>2</mr>
+    <signal>3</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_2_1_PCH</varname>
+    <frname>2- разряд кода задания производительности 1 канала ПЧ уп</frname>
+    <kmr>1</kmr>
+    <mr>2</mr>
+    <signal>4</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_3_1_PCH</varname>
+    <frname>3- разряд кода задания производительности 1 канала ПЧ уп</frname>
+    <kmr>1</kmr>
+    <mr>2</mr>
+    <signal>5</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_0_2_PCH</varname>
+    <frname>0 - разряд кода задания производительности 2 канала ПЧ уп</frname>
+    <kmr>1</kmr>
+    <mr>2</mr>
+    <signal>6</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_1_2_PCH</varname>
+    <frname>1- разряд кода задания производительности 2 канала ПЧ уп</frname>
+    <kmr>1</kmr>
+    <mr>2</mr>
+    <signal>7</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_2_2_PCH</varname>
+    <frname>2- разряд кода задания производительности 2 канала ПЧ уп</frname>
+    <kmr>1</kmr>
+    <mr>2</mr>
+    <signal>8</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_3_2_PCH</varname>
+    <frname>3-разряд кода задания Производительности 2 канала ПЧ уп</frname>
+    <kmr>1</kmr>
+    <mr>2</mr>
+    <signal>9</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_UKV_FAN_ON</varname>
+    <frname>Вкл. Вентилятора УКВ уп</frname>
+    <kmr>1</kmr>
+    <mr>2</mr>
+    <signal>10</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_UKV_COMPR_ON</varname>
+    <frname>Вкл. Компрессора УКВ уп</frname>
+    <kmr>1</kmr>
+    <mr>2</mr>
+    <signal>11</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_EM_VALVE_ON</varname>
+    <frname>Эл.магн. клапана (4К13) уп</frname>
+    <kmr>1</kmr>
+    <mr>2</mr>
+    <signal>12</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_UKV_HEATER_ON</varname>
+    <frname>Вкл. Эл.калорифера УКВ уп</frname>
+    <kmr>1</kmr>
+    <mr>2</mr>
+    <signal>13</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_HV_HEAT_1GRP_ON</varname>
+    <frname>Вкл. 1 гр. ВВ отопления уп</frname>
+    <kmr>1</kmr>
+    <mr>2</mr>
+    <signal>14</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_HV_HEAT_2GRP_ON</varname>
+    <frname>Вкл. 2 гр. ВВ отопления уп</frname>
+    <kmr>1</kmr>
+    <mr>2</mr>
+    <signal>15</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_HV_HEAT_SYSTEM_PUMP</varname>
+    <frname>Система ВВ отопления – насос отпления уп</frname>
+    <kmr>1</kmr>
+    <mr>2</mr>
+    <signal>16</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_TURN_OFF_ELECTRICS</varname>
+    <frname>Штатное откл. Эл.оборудования уп</frname>
+    <kmr>1</kmr>
+    <mr>3</mr>
+    <signal>1</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_INSUL_TEST_110V</varname>
+    <frname>Контр изол сети 110В(-) уп</frname>
+    <kmr>1</kmr>
+    <mr>3</mr>
+    <signal>2</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_UKV_AIR_VALVES_OPENED</varname>
+    <frname>1 -открытие(0 -закрытие) заслонок наружн. воздуха УКВ уп</frname>
+    <kmr>1</kmr>
+    <mr>3</mr>
+    <signal>3</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_OPEN_UKV_RECIRC_VALVES</varname>
+    <frname>Открытие клапанов рец. УКВ при tнв ниже 10 в ручке уп</frname>
+    <kmr>1</kmr>
+    <mr>3</mr>
+    <signal>4</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_CLOSE_UKV_RECIRC_VALVES</varname>
+    <frname>Закрытие клапанов рециркуляции УКВ уп</frname>
+    <kmr>1</kmr>
+    <mr>3</mr>
+    <signal>5</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_HV_HEAT_TEST</varname>
+    <frname>Тест ВВ отопления уп</frname>
+    <kmr>1</kmr>
+    <mr>3</mr>
+    <signal>7</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>OUT_INSUL_TEST_110V_PLUS</varname>
+    <frname>Контр изол сети 110В(+) уп</frname>
+    <kmr>1</kmr>
+    <mr>3</mr>
+    <signal>12</signal>
+    <typemr>MDO-16</typemr>
+  </item>
+  <item>
+    <varname>IN_TURN_OFF_ELECTRICS</varname>
+    <frname>«Штатное» откл. Эл оборудования</frname>
+    <kmr>1</kmr>
+    <mr>4</mr>
+    <signal>1</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_SKV_MANUAL_CNTRL</varname>
+    <frname>Переход на РУЧНОЕ УПРАВЛЕНИЕ СКВ</frname>
+    <kmr>1</kmr>
+    <mr>4</mr>
+    <signal>2</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_COOL_MODE_STATE</varname>
+    <frname>Вкл./Откл.Реж раб ОХЛАЖД (запуск/останов компр УКВ)</frname>
+    <kmr>1</kmr>
+    <mr>4</mr>
+    <signal>3</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_PCH1_STARTED</varname>
+    <frname>Подключение контактора компрессора, Пуск ПЧ 1</frname>
+    <kmr>1</kmr>
+    <mr>4</mr>
+    <signal>4</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_START_CONDENSER_FAN</varname>
+    <frname>Запуск вентилятора конденсатора</frname>
+    <kmr>1</kmr>
+    <mr>4</mr>
+    <signal>5</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_EM_VALVE_ON</varname>
+    <frname>Вкл. Эл магнитного клапана УКВ</frname>
+    <kmr>1</kmr>
+    <mr>4</mr>
+    <signal>6</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_COMPR_START_DENIED_14C</varname>
+    <frname>Запрет вкл. Компрессора по tºУКВ меньше 14º С</frname>
+    <kmr>1</kmr>
+    <mr>4</mr>
+    <signal>8</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_COMPR_OVERHEAT</varname>
+    <frname>Перегрев/фазировка компрессора</frname>
+    <kmr>1</kmr>
+    <mr>4</mr>
+    <signal>9</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_110_220V</varname>
+    <frname>ПН 110/ 220 В, 50Гц</frname>
+    <kmr>1</kmr>
+    <mr>4</mr>
+    <signal>10</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_UPH_GV_PUMP</varname>
+    <frname>УПХ и ГВ насос</frname>
+    <kmr>1</kmr>
+    <mr>4</mr>
+    <signal>11</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_220V_SOCKETS_VAC_CLEAN</varname>
+    <frname>Розетки 220 В пылесос/бритв</frname>
+    <kmr>1</kmr>
+    <mr>4</mr>
+    <signal>12</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_220V_SOCKETS_CP</varname>
+    <frname>Розетки 220 В купе</frname>
+    <kmr>1</kmr>
+    <mr>4</mr>
+    <signal>13</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_FIRE_DAMPERS_CLOSED</varname>
+    <frname>Противопожарные клапаны закрыты</frname>
+    <kmr>1</kmr>
+    <mr>4</mr>
+    <signal>15</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_LOW_INSUL_RESIST_110V</varname>
+    <frname>Низкое сопротивление изоляции 110В</frname>
+    <kmr>1</kmr>
+    <mr>4</mr>
+    <signal>16</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_MAN_INSUL_CNTRL_110V</varname>
+    <frname>Контр изол сети 110В–Ручн. реж ТЕСТ УКИ</frname>
+    <kmr>1</kmr>
+    <mr>5</mr>
+    <signal>2</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_BRAKES_FAILURE</varname>
+    <frname>Неотпуск тормозов</frname>
+    <kmr>1</kmr>
+    <mr>5</mr>
+    <signal>3</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_BS_SIGNAL_LIGHTS</varname>
+    <frname>Сигнальные фонари (торм. сторона)</frname>
+    <kmr>1</kmr>
+    <mr>5</mr>
+    <signal>4</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_BS_GANGWAY</varname>
+    <frname>Освещ переходн площадки торм. сторона</frname>
+    <kmr>1</kmr>
+    <mr>5</mr>
+    <signal>5</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_BS_PORTAL_LED</varname>
+    <frname>Освещение Тамбура светодиодное (торм. сторона)</frname>
+    <kmr>1</kmr>
+    <mr>5</mr>
+    <signal>6</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_BS_PORTAL_LUM</varname>
+    <frname>Люм. - Тамбур (торм. сторона)</frname>
+    <kmr>1</kmr>
+    <mr>5</mr>
+    <signal>7</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_SIDELONG_CORR_LED</varname>
+    <frname>Освещение светодиодное – Косой коридор</frname>
+    <kmr>1</kmr>
+    <mr>5</mr>
+    <signal>8</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_SIDELONG_CORR_LUM</varname>
+    <frname>Люм. – косой коридор</frname>
+    <kmr>1</kmr>
+    <mr>5</mr>
+    <signal>9</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_AUTO_LIGHTING_CNTRL</varname>
+    <frname>Нахождение 2S6 врежиме Авт. Упр.(ДЭКО)</frname>
+    <kmr>1</kmr>
+    <mr>5</mr>
+    <signal>10</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_WATER_HEAT</varname>
+    <frname>Кипятильник (пурифайер)</frname>
+    <kmr>1</kmr>
+    <mr>5</mr>
+    <signal>11</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_HANDBRAKE</varname>
+    <frname>Ручной стояночный тормоз</frname>
+    <kmr>1</kmr>
+    <mr>5</mr>
+    <signal>12</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_WATER_BOILER</varname>
+    <frname>Водонагреватель служебного отд.</frname>
+    <kmr>1</kmr>
+    <mr>5</mr>
+    <signal>13</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_220V_SOCKETS_KETTLE_VENDING</varname>
+    <frname>Розетки 220 В чайник (master), вендинг. апп. (slave)</frname>
+    <kmr>1</kmr>
+    <mr>5</mr>
+    <signal>14</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_MICROWAVE_OVEN</varname>
+    <frname>Печь МВ</frname>
+    <kmr>1</kmr>
+    <mr>5</mr>
+    <signal>15</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_FRIDGE</varname>
+    <frname>Холодильник</frname>
+    <kmr>1</kmr>
+    <mr>5</mr>
+    <signal>16</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_SKV_CNTRL_SUPPLY_VOLTAGE</varname>
+    <frname>Uпит. цепей управления СКВ</frname>
+    <kmr>1</kmr>
+    <mr>6</mr>
+    <signal>1</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_HEAT_PROTECT_RESET</varname>
+    <frname>Сброс дифф.защиты ВВ. отопления</frname>
+    <kmr>1</kmr>
+    <mr>6</mr>
+    <signal>2</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_3000_VOLTS</varname>
+    <frname>Наличие 3000 В</frname>
+    <kmr>1</kmr>
+    <mr>6</mr>
+    <signal>3</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_LOW_HEAT_CARRIER_LEVEL</varname>
+    <frname>Низкий уровень теплоносителя в котле</frname>
+    <kmr>1</kmr>
+    <mr>6</mr>
+    <signal>4</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_HV_HEAT_1GRP</varname>
+    <frname>1гр. ВВ отопления (вкл.ВВ контактора 1гр.)</frname>
+    <kmr>1</kmr>
+    <mr>6</mr>
+    <signal>5</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_HV_HEAT_2GRP</varname>
+    <frname>2гр. ВВ отопления (вкл.ВВ контактора 2гр.)</frname>
+    <kmr>1</kmr>
+    <mr>6</mr>
+    <signal>6</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_HV_HEAT_PROTECT_1GRP</varname>
+    <frname>Дифф. Защита 1гр. ВВ отопления</frname>
+    <kmr>1</kmr>
+    <mr>6</mr>
+    <signal>7</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_HV_HEAT_PROTECT_2GRP</varname>
+    <frname>Дифф. Защита 2гр. ВВ отопления</frname>
+    <kmr>1</kmr>
+    <mr>6</mr>
+    <signal>8</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_BOILER_OVERHEAT</varname>
+    <frname>Перегрев котла</frname>
+    <kmr>1</kmr>
+    <mr>6</mr>
+    <signal>9</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_BOILER_COVER_OPENED</varname>
+    <frname>Открыта крышка котла</frname>
+    <kmr>1</kmr>
+    <mr>6</mr>
+    <signal>10</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_HV_BOX_COVER_OPENED</varname>
+    <frname>Открыта крышка ВВящика/отсутствие сигнала с примененным ящиком</frname>
+    <kmr>1</kmr>
+    <mr>6</mr>
+    <signal>11</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_HV_HEAT_SYSTEM_PUMP_ON</varname>
+    <frname>Система ВВ отопления – насос отопл.ВКЛ.</frname>
+    <kmr>1</kmr>
+    <mr>6</mr>
+    <signal>12</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_VALVES_IN_DEFAULT_STATE</varname>
+    <frname>-эл. мех. краны в исх.положении (самоциркуляции теплоносителя)</frname>
+    <kmr>1</kmr>
+    <mr>6</mr>
+    <signal>13</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_VALVES_IN_PUMP_WORK_MODE</varname>
+    <frname>Эл. мех краны в положении работы насоса ВВ отопления</frname>
+    <kmr>1</kmr>
+    <mr>6</mr>
+    <signal>14</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_ELECTRIC_UKV_HEAT</varname>
+    <frname>Эл калорифер УКВ</frname>
+    <kmr>1</kmr>
+    <mr>6</mr>
+    <signal>16</signal>
+    <typemr>MDI-110</typemr>
+  </item>
+  <item>
+    <varname>IN_UKV_SUPPLY_FAN</varname>
+    <frname>Вентилятор приточный УКВ</frname>
+    <kmr>1</kmr>
+    <mr>7</mr>
+    <signal>1</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_UKV_AIR_FILTERS_FAILURE</varname>
+    <frname>Засор фильтров воздуха УКВ</frname>
+    <kmr>1</kmr>
+    <mr>7</mr>
+    <signal>2</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_AIR_RECIRC_VALVES_OPENED</varname>
+    <frname>Клапаны рециркуляции воздуха - открыты</frname>
+    <kmr>1</kmr>
+    <mr>7</mr>
+    <signal>3</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_AIR_RECIRC_VALVES_CLOSED</varname>
+    <frname>Клапаны рециркуляции воздуха - закрыты</frname>
+    <kmr>1</kmr>
+    <mr>7</mr>
+    <signal>4</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_PCH_WORK_2</varname>
+    <frname>Работа ПЧ – 2 канал</frname>
+    <kmr>1</kmr>
+    <mr>7</mr>
+    <signal>5</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_PCH_WORK_1</varname>
+    <frname>Работа ПЧ – 1канал</frname>
+    <kmr>1</kmr>
+    <mr>7</mr>
+    <signal>6</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_PCH_WORK_3</varname>
+    <frname>Работа ПЧ – 3 канал</frname>
+    <kmr>1</kmr>
+    <mr>7</mr>
+    <signal>7</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_PCH_FAILURE_2</varname>
+    <frname>Авария ПЧ – 2 канал</frname>
+    <kmr>1</kmr>
+    <mr>7</mr>
+    <signal>8</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_PCH_FAILURE_1</varname>
+    <frname>Авария ПЧ – 1 канал</frname>
+    <kmr>1</kmr>
+    <mr>7</mr>
+    <signal>9</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_PCH_FAILURE_3</varname>
+    <frname>Авария ПЧ – 3 канал</frname>
+    <kmr>1</kmr>
+    <mr>7</mr>
+    <signal>10</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_AIR_DECONT_CNTRL_1</varname>
+    <frname>Обеззараживатель воздуха – КОНТРОЛЬ 1</frname>
+    <kmr>1</kmr>
+    <mr>7</mr>
+    <signal>11</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_AIR_DECONT_CNTRL_2</varname>
+    <frname>Обеззараживатель воздуха – КОНТРОЛЬ 2</frname>
+    <kmr>1</kmr>
+    <mr>7</mr>
+    <signal>12</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_LIQUID_HEATS_TEMP_5C</varname>
+    <frname>Температура жидкостных калориферов ниже 5º С</frname>
+    <kmr>1</kmr>
+    <mr>7</mr>
+    <signal>13</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_AIR_DECONT_ON</varname>
+    <frname>Обеззараживатель воздуха - работа</frname>
+    <kmr>1</kmr>
+    <mr>7</mr>
+    <signal>14</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_AIR_DECONT_FAILURE</varname>
+    <frname>Обеззараживатель воздуха - неисправность</frname>
+    <kmr>1</kmr>
+    <mr>7</mr>
+    <signal>15</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_BS_TAKEOUT_ALARM</varname>
+    <frname>Вызывн сигн – дверь торц. Торм. Стор.</frname>
+    <kmr>1</kmr>
+    <mr>7</mr>
+    <signal>16</signal>
+    <typemr>MDI-24</typemr>
+  </item>
+  <item>
+    <varname>IN_INLET_AIR_TEMP</varname>
+    <frname>tº приточного воздуха</frname>
+    <kmr>1</kmr>
+    <mr>15</mr>
+    <signal>1</signal>
+    <typemr>MAI-T2</typemr>
+  </item>
+  <item>
+    <varname>IN_OUTDOOR_AIR_TEMP</varname>
+    <frname>tº наружного воздуха</frname>
+    <kmr>1</kmr>
+    <mr>15</mr>
+    <signal>2</signal>
+    <typemr>MAI-T2</typemr>
+  </item>
+  <item>
+    <varname>IN_SHOWER_TEMP</varname>
+    <frname>t в душевой</frname>
+    <kmr>2</kmr>
+    <mr>15</mr>
+    <signal>1</signal>
+    <typemr>MAI-T2</typemr>
+  </item>
+  <item>
+    <varname>IN_BOILER_TEMP</varname>
+    <frname>tº котла</frname>
+    <kmr>2</kmr>
+    <mr>15</mr>
+    <signal>2</signal>
+    <typemr>MAI-T2</typemr>
+  </item>
+  <item>
+    <varname>IN_CP_TEMP</varname>
+    <frname>tº купе</frname>
+    <kmr>1</kmr>
+    <mr>8</mr>
+    <signal>1</signal>
+    <typemr>MAI-T</typemr>
+  </item>
+  <item>
+    <varname>IN_HIGH_P_UKV</varname>
+    <frname>Рвыс.УКВ</frname>
+    <kmr>1</kmr>
+    <mr>9</mr>
+    <signal>1</signal>
+    <typemr>MAI-I/V</typemr>
+  </item>
+  <item>
+    <varname>IN_LOW_P_UKV</varname>
+    <frname>Рнизк.УКВ</frname>
+    <kmr>1</kmr>
+    <mr>9</mr>
+    <signal>2</signal>
+    <typemr>MAI-I/V</typemr>
+  </item>
+  <item>
+    <varname>IN_UKV_VALVE_2</varname>
+    <frname>Заслонка 2 УКВ</frname>
+    <kmr>1</kmr>
+    <mr>9</mr>
+    <signal>7</signal>
+    <typemr>MAI-I/V</typemr>
+  </item>
+  <item>
+    <varname>IN_UKV_VALVE_1</varname>
+    <frname>Заслонка 1 УКВ</frname>
+    <kmr>1</kmr>
+    <mr>9</mr>
+    <signal>8</signal>
+    <typemr>MAI-I/V</typemr>
+  </item>
+</maplinked>
