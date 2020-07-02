@@ -20,95 +20,36 @@ use xml_tools::*;
 // use db_tools::*;
 // use tools::*;
 
-struct ServerUdp{
-    addr: String,
-    socket: Option<std::net::UdpSocket>,
+struct Global_vars{
     broadcast_addr:  String,
     shutdownEmuPackage: String,
-    infoPackage: String,
-    closePackage: String
+    infoPackage: String
 }
 
-impl Clone for ServerUdp{
-    fn clone(&self) -> ServerUdp {
-        ServerUdp{
-            addr: self.addr.clone(),
-            socket: None,
-            broadcast_addr: self.broadcast_addr.clone(),
-            shutdownEmuPackage: self.shutdownEmuPackage.clone(),
-            infoPackage: self.infoPackage.clone(),
-            closePackage: self.closePackage.clone()
-        }
+fn initSocket(addr_sock: String) -> std::net::UdpSocket {
+    match UdpSocket::bind(addr_sock) {
+        Ok(sock) => return sock,
+        Err(e) => panic!("ERROR: {:?}",e) 
+    };
+} 
+
+fn initDevice(maplinked: &Maplinked) -> Vec<StateItems> {
+    
+    let size_vec_items = maplinked.items.len();
+    let mut list_state_items = Vec::new();
+
+    // бежим по длинне списка маплинкед, заполняем затычками струтуру
+    // где будем хранить значения параметров
+    for ind in 0..size_vec_items {
+        // новый элемент структуры
+        let mut stateItem = StateItems { 
+            varname: &maplinked.items[ind].varname, // берем имя параметра из maplinked
+            value: StateVal::Unit // кладем временно нулевое значение
+         };
+        list_state_items.push( stateItem )
     }
+    return list_state_items
 }
-
-impl ServerUdp{
-    fn new(addr_sock: String, broadcast_addr: String) -> ServerUdp {
-        match UdpSocket::bind(addr_sock) {
-            Ok(sock) => {
-                // включаем поддержку отправки на броадкаст
-                sock.set_broadcast(true).expect("set_broadcast call failed");
-
-                let instance = ServerUdp { 
-                    addr: addr_sock,
-                    socket: Some(sock),
-                    broadcast_addr: broadcast_addr,
-                    shutdownEmuPackage: "".to_string(),
-                    infoPackage: "".to_string(),
-                    closePackage: "".to_string()
-                };
-                return instance;
-            },
-            Err(e) => panic!("ERROR: {:?}",e) 
-        };
-    }
-
-    fn getInfoPackage(&mut self, infoPack: String) -> &mut ServerUdp{
-        self.infoPackage = infoPack;
-        self
-    }
-
-    fn getClosePackage(&mut self, closePack: String) -> &mut ServerUdp{ 
-        self.closePackage = closePack;
-        self
-    }
-
-    fn getSocket(&mut self, newAddr: String){
-        match UdpSocket::bind(newAddr) {
-            Ok(sock) => {
-                self.socket = Some(sock);
-            },
-            Err(e) => panic!("Error open socket: {:?}", e)
-        }
-    }
-   
-    fn finalize(&self) -> ServerUdp {
-        ServerUdp{ 
-            addr: self.addr,
-            socket: self.socket,
-            broadcast_addr:  self.broadcast_addr,
-            shutdownEmuPackage: self.shutdownEmuPackage,
-            infoPackage: self.infoPackage,
-            closePackage: self.closePackage   
-        }
-    }
-
-
-
-    fn send_broadcast(&self, packname: String) -> &ServerUdp{
-        match &packname[..] {
-            "info" =>  self.socket.unwrap().send_to(self.infoPackage.as_bytes(), &self.broadcast_addr).unwrap(),
-            "close" => self.socket.unwrap().send_to(self.closePackage.as_bytes(), &self.broadcast_addr).unwrap(),
-            _ => panic!("Нет такого пакета для ServerUdp")
-        };
-        self
-    }
-
-
-
-}
-
- 
 
 // fn changeParam<T: ToString>(varname: String, value: T) {
 
@@ -149,7 +90,7 @@ fn cli_interface(list_state: &Vec<StateItems>, conn: &rusqlite::Connection) -> R
     Ok("-1".to_string())
 }
 
-fn startInfoListener(receiver: Receiver<bool>, sender: Sender<bool>, server: ServerUdp) -> std::io::Result<()> {
+fn startInfoListener(receiver: Receiver<bool>, sender: Sender<bool>, infoPackage: String) -> std::io::Result<()> {
     
 
 
@@ -158,13 +99,16 @@ fn startInfoListener(receiver: Receiver<bool>, sender: Sender<bool>, server: Ser
     //     Ok(sock) => sock,
     //     Err(e) => panic!(e) 
     // };
-    let broadcast_addr = "10.7.255.255:19000".to_string();
+    let socket = initSocket("10.7.2.2:5555".to_string());
+    
+    let broadcast_addr = "10.7.255.255:19000";
+    // включаем поддержку отправки на броадкаст
+    socket.set_broadcast(true).expect("set_broadcast call failed");
     
     
-
     loop{
         // let msg_test = infoPackage;
-        server.send_broadcast("info".to_string());
+        socket.send_to(infoPackage.as_bytes(), broadcast_addr)?;
         
         thread::sleep(Duration::from_millis(4000));
         match receiver.try_recv() {
@@ -269,8 +213,8 @@ struct SetAnswers {
 fn main() {
 
     let filename = "./xml_source/maplinked.xml";
-    let maplinked: Maplinked = Maplinked::new(filename.to_string());
-    let mut list_state_items = maplinked.initDevice();
+    let maplinked: Maplinked = xmlToStruct(filename.to_string());
+    let mut list_state_items = initDevice(&maplinked);
 
     // // println!("{:#?}", list_state_items[0].varname);
     let conn = crate::db_tools::create_db().unwrap();
@@ -336,28 +280,17 @@ fn main() {
         get: getResult.to_string()
     };
 
-
-    let server_udp_inctance = ServerUdp::new("10.7.2.2:5555".to_string(), broadcast_addr)
-        .getInfoPackage(infoPackage.to_string())
-        .getClosePackage(closePackage.to_string())
-        .finalize();
-
-
-    let socket_for_close = &mut server_udp_inctance.clone();
-    socket_for_close.getSocket(String::from("10.7.2.2:5556"));
-
-    let infoThread = thread::spawn( || { startInfoListener(receiver_for_info, sender_for_listener, server_udp_inctance) } );
+    let infoThread = thread::spawn( || { startInfoListener(receiver_for_info, sender_for_listener, infoPackage) } );
     let otherPackageThread = thread::spawn( || {listenerPackage(receiver_for_listener, setAnswers) });
     
     // // функция с лямбдой -- хендлер для отлова ctrl + c 
     // // отсылает пакет завершения и кидает сообщение потоку info с коммандой завершиться
-    
     ctrlc::set_handler( move || {
 
         println!("received Ctrl+C!");
-        
-        
-        socket_for_close.send_broadcast("close".to_string());
+        let socket_ = initSocket("10.7.2.2:5556".to_string());
+        socket_.set_broadcast(true).expect("set_broadcast call failed");
+        socket_.send_to(&closePackage.as_bytes(), &broadcast_addr).unwrap();
         println!("exit!");
         match sender_for_info.send(true){
             // Ok(_) => std::process::exit(0),
