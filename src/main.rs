@@ -20,92 +20,119 @@ use xml_tools::*;
 // use db_tools::*;
 // use tools::*;
 
-struct ServerUdp{
+struct ServerUdp<'a>{
+    addr: &'a str,
+    socket: Option<&'a std::net::UdpSocket>,
+    broadcast_addr:  &'a str,
+    shutdownEmuPackage: &'a str,
+    infoPackage: &'a str,
+    closePackage: &'a str,
+     
+}
+
+struct ServerBuilder{
     addr: String,
     socket: Option<std::net::UdpSocket>,
     broadcast_addr:  String,
     shutdownEmuPackage: String,
     infoPackage: String,
-    closePackage: String
+    closePackage: String,
+     
 }
 
-impl Clone for ServerUdp{
-    fn clone(&self) -> ServerUdp {
-        ServerUdp{
-            addr: self.addr.clone(),
-            socket: None,
-            broadcast_addr: self.broadcast_addr.clone(),
-            shutdownEmuPackage: self.shutdownEmuPackage.clone(),
-            infoPackage: self.infoPackage.clone(),
-            closePackage: self.closePackage.clone()
-        }
-    }
-}
-
-impl ServerUdp{
-    fn new(addr_sock: String, broadcast_addr: String) -> ServerUdp {
-        match UdpSocket::bind(addr_sock) {
+impl<'a> ServerBuilder{
+    fn new(addr_sock: String) -> ServerBuilder {
+        let addr = addr_sock.clone();
+        match UdpSocket::bind(addr) {
             Ok(sock) => {
                 // включаем поддержку отправки на броадкаст
                 sock.set_broadcast(true).expect("set_broadcast call failed");
 
-                let instance = ServerUdp { 
+                //  генерируем структуру
+                return ServerBuilder { 
                     addr: addr_sock,
                     socket: Some(sock),
-                    broadcast_addr: broadcast_addr,
-                    shutdownEmuPackage: "".to_string(),
-                    infoPackage: "".to_string(),
-                    closePackage: "".to_string()
+                    broadcast_addr: "".to_owned(),
+                    shutdownEmuPackage: "".to_owned(),
+                    infoPackage: "".to_owned(),
+                    closePackage: "".to_owned()
                 };
-                return instance;
+ 
             },
             Err(e) => panic!("ERROR: {:?}",e) 
         };
     }
 
-    fn getInfoPackage(&mut self, infoPack: String) -> &mut ServerUdp{
+    fn getInfoPackage(&mut self, infoPack: String) -> &mut ServerBuilder{
         self.infoPackage = infoPack;
         self
     }
 
-    fn getClosePackage(&mut self, closePack: String) -> &mut ServerUdp{ 
+    fn getClosePackage(&mut self, closePack: String) -> &mut ServerBuilder{ 
         self.closePackage = closePack;
         self
     }
 
-    fn getSocket(&mut self, newAddr: String){
-        match UdpSocket::bind(newAddr) {
-            Ok(sock) => {
-                self.socket = Some(sock);
-            },
-            Err(e) => panic!("Error open socket: {:?}", e)
-        }
+    fn getBroadcast(&mut self, broadcast_addr: String) -> &mut ServerBuilder{
+        self.broadcast_addr = broadcast_addr;
+        self
     }
-   
+
     fn finalize(&self) -> ServerUdp {
         ServerUdp{ 
-            addr: self.addr,
-            socket: self.socket,
-            broadcast_addr:  self.broadcast_addr,
-            shutdownEmuPackage: self.shutdownEmuPackage,
-            infoPackage: self.infoPackage,
-            closePackage: self.closePackage   
+            addr: &self.addr,
+            socket: self.socket.as_ref(),
+            broadcast_addr:  &self.broadcast_addr,
+            shutdownEmuPackage: &self.shutdownEmuPackage,
+            infoPackage: &self.infoPackage,
+            closePackage: &self.closePackage
         }
     }
 
+}
 
+// impl<'a> Clone for ServerUdp<'a>{
+//     fn clone(&self) -> ServerUdp<'a> {
+//         ServerUdp{
+//             addr: self.addr.clone(),
+//             socket: None,
+//             broadcast_addr: self.broadcast_addr.clone(),
+//             shutdownEmuPackage: self.shutdownEmuPackage.clone(),
+//             infoPackage: self.infoPackage.clone(),
+//             closePackage: self.closePackage.clone()
+//         }
+//     }
+// }
 
-    fn send_broadcast(&self, packname: String) -> &ServerUdp{
+impl<'a> ServerUdp<'a>{
+
+    fn send_broadcast(&mut self, packname: String) -> &ServerUdp{
         match &packname[..] {
-            "info" =>  self.socket.unwrap().send_to(self.infoPackage.as_bytes(), &self.broadcast_addr).unwrap(),
-            "close" => self.socket.unwrap().send_to(self.closePackage.as_bytes(), &self.broadcast_addr).unwrap(),
+            "info" =>  {
+                let sock = (self.socket.as_ref()).unwrap();
+                sock.send_to(self.infoPackage.as_bytes(), &self.broadcast_addr).unwrap();
+            },
+            "close" => {
+                let sock = (self.socket.as_ref()).unwrap();
+                sock.send_to(self.closePackage.as_bytes(), &self.broadcast_addr).unwrap();
+            }
             _ => panic!("Нет такого пакета для ServerUdp")
         };
         self
     }
 
+    // fn getSockAdd(&mut self, addr: String) -> {
 
+    // }
 
+    // fn getSocket(&mut self, newAddr: String){
+    //     match UdpSocket::bind(newAddr) {
+    //         Ok(sock) => {
+    //             self.socket = Some(sock);
+    //         },
+    //         Err(e) => panic!("Error open socket: {:?}", e)
+    //     }
+    // }
 }
 
  
@@ -153,7 +180,7 @@ fn startInfoListener(receiver: Receiver<bool>, sender: Sender<bool>, server: Ser
     
 
 
-    println!("dddd");
+    println!("start Info Listener");
     // let mut socket = match UdpSocket::bind("10.7.2.2:5555") {
     //     Ok(sock) => sock,
     //     Err(e) => panic!(e) 
@@ -336,15 +363,21 @@ fn main() {
         get: getResult.to_string()
     };
 
-
-    let server_udp_inctance = ServerUdp::new("10.7.2.2:5555".to_string(), broadcast_addr)
-        .getInfoPackage(infoPackage.to_string())
-        .getClosePackage(closePackage.to_string())
+    let infoPackage_clone = infoPackage.clone();
+    let server_udp_inctance = ServerBuilder::new("10.7.2.2:5555".to_owned())
+        .getInfoPackage(infoPackage)
+        .getClosePackage(closePackage)
+        .getBroadcast(broadcast_addr)
         .finalize();
 
 
-    let socket_for_close = &mut server_udp_inctance.clone();
-    socket_for_close.getSocket(String::from("10.7.2.2:5556"));
+    // let socket_for_close =  ServerBuilder::new("10.7.2.2:5556".to_owned())// server_udp_inctance.clone();
+    //     .getInfoPackage(infoPackage_clone)
+    //     .getClosePackage(closePackage)
+    //     .getBroadcast(broadcast_addr)
+    //     .finalize();
+    
+    // socket_for_close.getSocket(String::from("10.7.2.2:5556"));
 
     let infoThread = thread::spawn( || { startInfoListener(receiver_for_info, sender_for_listener, server_udp_inctance) } );
     let otherPackageThread = thread::spawn( || {listenerPackage(receiver_for_listener, setAnswers) });
@@ -357,7 +390,7 @@ fn main() {
         println!("received Ctrl+C!");
         
         
-        socket_for_close.send_broadcast("close".to_string());
+        // socket_for_close.send_broadcast("close".to_string());
         println!("exit!");
         match sender_for_info.send(true){
             // Ok(_) => std::process::exit(0),

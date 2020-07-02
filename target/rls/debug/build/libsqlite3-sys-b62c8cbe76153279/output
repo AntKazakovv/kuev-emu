@@ -1,0 +1,27 @@
+cargo:rerun-if-env-changed=SQLITE_MAX_VARIABLE_NUMBER
+cargo:rerun-if-env-changed=SQLITE_MAX_EXPR_DEPTH
+TARGET = Some("x86_64-unknown-linux-gnu")
+OPT_LEVEL = Some("0")
+HOST = Some("x86_64-unknown-linux-gnu")
+CC_x86_64-unknown-linux-gnu = None
+CC_x86_64_unknown_linux_gnu = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-unknown-linux-gnu = None
+CFLAGS_x86_64_unknown_linux_gnu = None
+HOST_CFLAGS = None
+CFLAGS = None
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("true")
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-DSQLITE_CORE" "-DSQLITE_DEFAULT_FOREIGN_KEYS=1" "-DSQLITE_ENABLE_API_ARMOR" "-DSQLITE_ENABLE_COLUMN_METADATA" "-DSQLITE_ENABLE_DBSTAT_VTAB" "-DSQLITE_ENABLE_FTS3" "-DSQLITE_ENABLE_FTS3_PARENTHESIS" "-DSQLITE_ENABLE_FTS5" "-DSQLITE_ENABLE_JSON1" "-DSQLITE_ENABLE_LOAD_EXTENSION=1" "-DSQLITE_ENABLE_MEMORY_MANAGEMENT" "-DSQLITE_ENABLE_RTREE" "-DSQLITE_ENABLE_STAT2" "-DSQLITE_ENABLE_STAT4" "-DSQLITE_SOUNDEX" "-DSQLITE_THREADSAFE=1" "-DSQLITE_USE_URI" "-DHAVE_USLEEP=1" "-DSQLITE_HAVE_ISNAN" "-o" "/home/kazakov/code/Rust/kuev-emu/target/rls/debug/build/libsqlite3-sys-b62c8cbe76153279/out/sqlite3/sqlite3.o" "-c" "sqlite3/sqlite3.c"
+exit code: 0
+AR_x86_64-unknown-linux-gnu = None
+AR_x86_64_unknown_linux_gnu = None
+HOST_AR = None
+AR = None
+running: "ar" "crs" "/home/kazakov/code/Rust/kuev-emu/target/rls/debug/build/libsqlite3-sys-b62c8cbe76153279/out/libsqlite3.a" "/home/kazakov/code/Rust/kuev-emu/target/rls/debug/build/libsqlite3-sys-b62c8cbe76153279/out/sqlite3/sqlite3.o"
+exit code: 0
+cargo:rustc-link-lib=static=sqlite3
+cargo:rustc-link-search=native=/home/kazakov/code/Rust/kuev-emu/target/rls/debug/build/libsqlite3-sys-b62c8cbe76153279/out
+cargo:lib_dir=/home/kazakov/code/Rust/kuev-emu/target/rls/debug/build/libsqlite3-sys-b62c8cbe76153279/out

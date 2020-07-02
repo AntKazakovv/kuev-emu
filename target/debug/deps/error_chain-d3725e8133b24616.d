@@ -1,0 +1,11 @@
+/home/kazakov/code/Rust/kuev-emu/target/debug/deps/error_chain-d3725e8133b24616.rmeta: /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.10.0/src/lib.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.10.0/src/quick_error.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.10.0/src/error_chain.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.10.0/src/quick_main.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.10.0/src/example_generated.rs
+
+/home/kazakov/code/Rust/kuev-emu/target/debug/deps/liberror_chain-d3725e8133b24616.rlib: /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.10.0/src/lib.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.10.0/src/quick_error.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.10.0/src/error_chain.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.10.0/src/quick_main.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.10.0/src/example_generated.rs
+
+/home/kazakov/code/Rust/kuev-emu/target/debug/deps/error_chain-d3725e8133b24616.d: /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.10.0/src/lib.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.10.0/src/quick_error.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.10.0/src/error_chain.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.10.0/src/quick_main.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.10.0/src/example_generated.rs
+
+/home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.10.0/src/lib.rs:
+/home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.10.0/src/quick_error.rs:
+/home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.10.0/src/error_chain.rs:
+/home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.10.0/src/quick_main.rs:
+/home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/error-chain-0.10.0/src/example_generated.rs:

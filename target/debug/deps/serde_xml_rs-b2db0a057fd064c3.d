@@ -1,0 +1,12 @@
+/home/kazakov/code/Rust/kuev-emu/target/debug/deps/serde_xml_rs-b2db0a057fd064c3.rmeta: /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/lib.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/error.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/de/mod.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/de/map.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/de/seq.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/de/var.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/ser/mod.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/ser/var.rs
+
+/home/kazakov/code/Rust/kuev-emu/target/debug/deps/serde_xml_rs-b2db0a057fd064c3.d: /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/lib.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/error.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/de/mod.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/de/map.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/de/seq.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/de/var.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/ser/mod.rs /home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/ser/var.rs
+
+/home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/lib.rs:
+/home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/error.rs:
+/home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/de/mod.rs:
+/home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/de/map.rs:
+/home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/de/seq.rs:
+/home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/de/var.rs:
+/home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/ser/mod.rs:
+/home/kazakov/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-xml-rs-0.3.1/src/ser/var.rs:
